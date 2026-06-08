@@ -6,6 +6,10 @@
 <title>Ugochukwu Okonkwo | Engineering Portfolio</title>
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     font-family: Arial, sans-serif;
     margin:0;
@@ -15,25 +19,46 @@ body{
     color:#222;
 }
 
+nav{
+    background:#002b52;
+    padding:15px 20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
 header{
-    background:#003b70;
+    background:linear-gradient(135deg,#003b70,#005fa3);
     color:white;
     text-align:center;
-    padding:60px 20px;
+    padding:70px 20px;
 }
 
 .profile-pic{
-    width:200px;
-    height:200px;
+    width:210px;
+    height:210px;
     border-radius:50%;
     object-fit:cover;
-    border:4px solid white;
+    border:5px solid white;
     margin-bottom:20px;
 }
 
 header h1{
     margin:10px 0;
-    font-size:42px;
+    font-size:44px;
 }
 
 header h3{
@@ -47,17 +72,29 @@ header p{
 }
 
 section{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-    padding:40px 20px;
+    padding:45px 20px;
 }
 
-.project{
+h2{
+    font-size:32px;
+    color:#003b70;
+    margin-bottom:25px;
+}
+
+.card{
     background:white;
     border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    margin-bottom:20px;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
+}
+
+.card h3{
+    color:#003b70;
+    margin-top:0;
 }
 
 .btn{
@@ -80,16 +117,89 @@ section{
     color:white;
 }
 
+.contact-btn:hover{
+    background:#005fa3;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.skill-box h3{
+    color:#003b70;
+    margin-top:0;
+}
+
+.project-img{
+    width:100%;
+    border-radius:10px;
+    border:1px solid #ddd;
+    margin-top:15px;
+}
+
+.caption{
+    font-size:14px;
+    color:#555;
+    text-align:center;
+    margin-top:8px;
+}
+
 footer{
     text-align:center;
-    padding:20px;
+    padding:25px;
     background:#222;
     color:white;
+}
+
+@media(max-width:700px){
+    header h1{
+        font-size:34px;
+    }
+
+    header h3{
+        font-size:20px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:6px;
+        font-size:14px;
+    }
+
+    .profile-pic{
+        width:170px;
+        height:170px;
+    }
 }
 </style>
 </head>
 
 <body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <header>
     <img src="headshot.jpg" alt="Ugochukwu Okonkwo headshot" class="profile-pic">
@@ -97,6 +207,7 @@ footer{
     <h1>Ugochukwu Okonkwo</h1>
 
     <h3>M.S. Biomedical Engineering | MBA</h3>
+
     <p>
         Medical Device Product Development • Design Verification & Validation •
         CAD Design • Prototyping • Quality Engineering
@@ -106,24 +217,30 @@ footer{
     <a href="https://www.linkedin.com/in/ugochukwu-okonkwo-ms-mba-7859522a1/" target="_blank" class="btn">LinkedIn</a>
 </header>
 
-<section>
+<section id="about">
     <h2>About Me</h2>
 
-    <p>
-        Biomedical Engineer with an M.S. in Biomedical Engineering and MBA,
-        experienced in medical device product development, design verification
-        and validation, CAD design, rapid prototyping, usability engineering,
-        and quality systems. My background spans orthopedic device development,
-        assistive technology design, and tissue engineering research, with a
-        focus on translating user needs into practical engineering solutions
-        that improve patient outcomes.
-    </p>
+    <div class="card">
+        <p>
+            Biomedical Engineer with an M.S. in Biomedical Engineering and MBA,
+            experienced in medical device product development, design verification
+            and validation, CAD design, rapid prototyping, usability engineering,
+            and quality systems.
+        </p>
+
+        <p>
+            My background spans orthopedic device development, assistive technology
+            design, and tissue engineering research. I am interested in designing,
+            developing, and improving medical devices that solve real clinical and
+            usability challenges.
+        </p>
+    </div>
 </section>
 
-<section>
+<section id="experience">
     <h2>Professional Experience</h2>
 
-    <div class="project">
+    <div class="card">
         <h3>Project Engineer Co-op | Globus Medical</h3>
         <p><strong>January 2024 – August 2024</strong></p>
 
@@ -138,11 +255,12 @@ footer{
     </div>
 </section>
 
-<section>
-    <h2>Featured Projects</h2>
+<section id="projects">
+    <h2>Featured Engineering Projects</h2>
 
-    <div class="project">
+    <div class="card">
         <h3>Master's Thesis: Assistive Button Hook Redesign</h3>
+
         <p>
             Conducted a human-centered design study to improve the usability,
             comfort, and effectiveness of an assistive dressing device for
@@ -158,101 +276,124 @@ footer{
         </ul>
     </div>
 
-    <div class="project">
-        <h3>Senior Design: Electrospinning System</h3>
+    <div class="card">
+        <h3>Low-Cost Versatile Electrospinning System</h3>
+
         <p>
-            Designed and developed a cost-effective electrospinning system capable
-            of producing aligned and random polymeric nanofibers for tissue
-            engineering applications.
+            Undergraduate senior design project focused on the design, fabrication,
+            and validation of a low-cost electrospinning platform capable of producing
+            both aligned and random polymeric nanofibers for tissue engineering applications.
         </p>
 
         <ul>
-            <li>Designed custom syringe pump and collector systems.</li>
-            <li>Integrated safety features including grounding and emergency shutdown.</li>
-            <li>Enabled switching between aligned and random fiber production.</li>
-            <li>Developed an affordable alternative to commercial electrospinning systems.</li>
+            <li>Mapped out the overall system architecture and created the layout for the electrospinning platform.</li>
+            <li>Designed the system enclosure and structural layout using CAD.</li>
+            <li>Built the enclosure using aluminum railing, acrylic panels, fastening systems, and fabrication tools.</li>
+            <li>Integrated syringe pump, rotating collector, high-voltage power supply, motor, and control components.</li>
+            <li>Applied iterative prototyping and 3D printing to refine custom components and collector assemblies.</li>
+            <li>Conducted testing and parameter optimization involving flow rate, collector speed, and polymer delivery.</li>
+            <li>Implemented safety-focused design features including enclosure protection, grounding considerations, and high-voltage isolation.</li>
+        </ul>
+
+        <div class="grid">
+            <div>
+                <img src="electrospinning_setup.jpg" alt="Completed electrospinning system setup" class="project-img">
+                <p class="caption">Completed electrospinning system with acrylic enclosure, aluminum frame, syringe pump, and rotating collector.</p>
+            </div>
+
+            <div>
+                <img src="electrospinning_poster.jpg" alt="Electrospinning senior design poster" class="project-img">
+                <p class="caption">Senior design poster summarizing system design, components, fabrication, results, and future work.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>3D Printing & Prototyping</h3>
+
+        <p>
+            Developed and refined functional prototypes using additive manufacturing
+            techniques for medical device, assistive technology, and engineering design projects.
+        </p>
+
+        <ul>
+            <li>Bambu Lab X1 Carbon 3D printing</li>
+            <li>Rapid prototyping and design iteration</li>
+            <li>Functional testing and fit verification</li>
+            <li>Design for additive manufacturing</li>
+            <li>Prototype fabrication and evaluation</li>
         </ul>
     </div>
 </section>
 
-<section>
-    <h2>3D Printing & Prototyping</h2>
-
-    <div class="project">
-        <p>
-            Developed and refined functional prototypes using additive
-            manufacturing techniques for medical device, assistive technology,
-            and engineering design projects.
-        </p>
-
-        <ul>
-            <li>Bambu Lab X1 Carbon 3D Printing</li>
-            <li>Rapid Prototyping & Design Iteration</li>
-            <li>Functional Testing & Fit Verification</li>
-            <li>Design for Additive Manufacturing</li>
-            <li>Prototype Fabrication & Evaluation</li>
-        </ul>
-    </div>
-</section>
-
-<section>
+<section id="skills">
     <h2>Technical Skills</h2>
 
-    <div class="project">
+    <div class="skill-grid">
 
-        <p>
-            <strong>Medical Device Engineering:</strong>
-            Design Verification & Validation (V&V), Human-Centered Design,
-            Usability Testing, Design Controls, Risk Management,
-            Quality Systems (QMS)
-        </p>
+        <div class="skill-box">
+            <h3>Medical Device Engineering</h3>
+            <p>
+                Design Verification & Validation (V&V), Human-Centered Design,
+                Usability Testing, Design Controls, Risk Management, Quality Systems (QMS)
+            </p>
+        </div>
 
-        <p>
-            <strong>CAD & Product Development:</strong>
-            Creo Parametric, SolidWorks, Autodesk Inventor,
-            Engineering Drawings, GD&T, Design for Manufacturing (DFM),
-            Rapid Prototyping, 3D Printing
-        </p>
+        <div class="skill-box">
+            <h3>CAD & Product Development</h3>
+            <p>
+                Creo Parametric, SolidWorks, Autodesk Inventor, Engineering Drawings,
+                GD&T, Design for Manufacturing (DFM), Rapid Prototyping, 3D Printing
+            </p>
+        </div>
 
-        <p>
-            <strong>Manufacturing & Process Improvement:</strong>
-            Lean Six Sigma, DMAIC, Root Cause Analysis,
-            Process Improvement, Fixture Design,
-            Prototype Development, CO₂ Laser Cutting
-        </p>
+        <div class="skill-box">
+            <h3>Manufacturing & Process Improvement</h3>
+            <p>
+                Lean Six Sigma, DMAIC, Root Cause Analysis, Process Improvement,
+                Fixture Design, Prototype Development, CO₂ Laser Cutting
+            </p>
+        </div>
 
-        <p>
-            <strong>Modeling & Simulation:</strong>
-            ANSYS Fluent, Thermal & Bioheat Modeling,
-            Mesh Independence Studies, MATLAB
-        </p>
+        <div class="skill-box">
+            <h3>Modeling & Simulation</h3>
+            <p>
+                ANSYS Fluent, Thermal & Bioheat Modeling, Mesh Independence Studies,
+                MATLAB
+            </p>
+        </div>
 
-        <p>
-            <strong>Quality & Regulatory:</strong>
-            FMEA, CAPA, Complaint Investigation,
-            Change Management, Documentation Control,
-            FDA Quality Systems
-        </p>
+        <div class="skill-box">
+            <h3>Quality & Regulatory</h3>
+            <p>
+                FMEA, CAPA, Complaint Investigation, Change Management,
+                Documentation Control, FDA Quality Systems
+            </p>
+        </div>
 
-        <p>
-            <strong>Data & Software:</strong>
-            Excel, Pivot Tables, Regression, Data Analysis ToolPak,
-            SQL, Tableau, ROS2
-        </p>
+        <div class="skill-box">
+            <h3>Data & Software</h3>
+            <p>
+                Excel, Pivot Tables, Regression, Data Analysis ToolPak,
+                SQL, Tableau, ROS2
+            </p>
+        </div>
 
-        <p>
-            <strong>Laboratory Techniques:</strong>
-            Bradford Assay, Protein Extraction,
-            Aseptic Laboratory Practices, Biosafety Procedures
-        </p>
+        <div class="skill-box">
+            <h3>Laboratory Techniques</h3>
+            <p>
+                Bradford Assay, Protein Extraction, Aseptic Laboratory Practices,
+                Biosafety Procedures
+            </p>
+        </div>
 
     </div>
 </section>
 
-<section>
+<section id="education">
     <h2>Education</h2>
 
-    <div class="project">
+    <div class="card">
         <h3>Widener University</h3>
 
         <p>
@@ -275,7 +416,7 @@ footer{
 <section>
     <h2>Certifications</h2>
 
-    <div class="project">
+    <div class="card">
         <ul>
             <li>PTC Creo Certification — Planned</li>
             <li>SolidWorks CSWA — Planned</li>
@@ -284,13 +425,21 @@ footer{
     </div>
 </section>
 
-<section>
+<section id="contact">
     <h2>Contact</h2>
 
-    <p>Email: UgochukwuOkonkwo04@gmail.com</p>
+    <div class="card">
+        <p>
+            I am open to opportunities in medical device product development,
+            R&D engineering, manufacturing engineering, quality engineering,
+            and biomedical engineering roles.
+        </p>
 
-    <a href="mailto:UgochukwuOkonkwo04@gmail.com" class="btn contact-btn">Email Me</a>
-    <a href="https://www.linkedin.com/in/ugochukwu-okonkwo-ms-mba-7859522a1/" target="_blank" class="btn contact-btn">LinkedIn</a>
+        <p><strong>Email:</strong> UgochukwuOkonkwo04@gmail.com</p>
+
+        <a href="mailto:UgochukwuOkonkwo04@gmail.com" class="btn contact-btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/ugochukwu-okonkwo-ms-mba-7859522a1/" target="_blank" class="btn contact-btn">LinkedIn</a>
+    </div>
 </section>
 
 <footer>
