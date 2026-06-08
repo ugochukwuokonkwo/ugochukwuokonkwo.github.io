@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ugochukwu Okonkwo Portfolio</title>
+</head>
+<body>
+  <h1>Ugochukwu Okonkwo</h1>
+  <p>Biomedical Engineer | MBA | Medical Device Design | CAD & Prototyping</p>
+
+  <h2>Projects</h2>
+  <ul>
+    <li>Master’s Thesis: Ergonomic Button Hook Redesign</li>
+    <li>Electrospinning System for Nanofiber Fabrication</li>
+    <li>Computational Bioheat Modeling</li>
+    <li>Globus Medical Project Engineering Co-op</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Email: your email here</p>
+  <p>LinkedIn: your LinkedIn link here</p>
+</body>
+</html>
