@@ -213,6 +213,35 @@ h2{
     color:#555;
     font-size:15px;
 }
+.section-white{
+    background:white;
+}
+
+.section-gray{
+    background:#f3f5f7;
+}
+.quick-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.quick-link{
+    background:white;
+    color:#003b70;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.quick-link:hover{
+    transform:translateY(-2px);
+}
 footer{
     text-align:center;
     padding:25px;
@@ -269,11 +298,29 @@ footer{
         Quality Engineering • Product & Project Management
     </p>
 
-    <a href="Ugochukwu_Okonkwo_Resume.pdf" download class="btn">Download Resume</a>
-    <a href="https://www.linkedin.com/in/ugochukwu-okonkwo-ms-mba-7859522a1/" target="_blank" class="btn">LinkedIn</a>
+<div class="quick-links">
+
+    <a href="Ugochukwu_Okonkwo_Resume.pdf"
+       download
+       class="quick-link">
+       📄 Resume
+    </a>
+
+    <a href="https://www.linkedin.com/in/ugochukwu-okonkwo-ms-mba-7859522a1/"
+       target="_blank"
+       class="quick-link">
+       💼 LinkedIn
+    </a>
+
+    <a href="mailto:UgochukwuOkonkwo04@gmail.com"
+       class="quick-link">
+       ✉️ Email
+    </a>
+
+</div>
 </header>
 
-<section id="about">
+<section id="about" class="section-white">
     <h2>About Me</h2>
 
     <div class="card">
@@ -292,7 +339,7 @@ footer{
     </div>
 </section>
     
-<section id="gallery">
+<section id="gallery" class="section-gray">
     <h2>Project Gallery</h2>
 
     <div class="grid">
@@ -331,7 +378,7 @@ footer{
     </div>
 </section>
     
-<section id="experience">
+<section id="experience" class="section-white">
     <h2>Professional Experience</h2>
 
     <div class="card">
@@ -349,7 +396,7 @@ footer{
     </div>
 </section>
     
-<section id="design-process">
+<section id="design-process" class="section-gray">
     <h2>Design Process</h2>
 
     <div class="grid">
@@ -387,7 +434,7 @@ footer{
     </div>
 </section>
     
-<section id="projects">
+<section id="projects" class="section-white">
     <h2>Featured Engineering Projects</h2>
 
 <div class="card">
@@ -433,7 +480,24 @@ footer{
         CO₂ Laser Cutting, Experimental Testing,
         Stakeholder Collaboration, Assistive Technology Design
     </p>
+<div class="stat-grid">
 
+    <div class="stat-box">
+        <h3>5</h3>
+        <p>Mechanisms Explored</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>4</h3>
+        <p>Handle Concepts Tested</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>2</h3>
+        <p>Configurations Evaluated</p>
+    </div>
+
+</div>
     <div class="grid">
 
         <div>
@@ -578,7 +642,24 @@ footer{
             Manufacturing & Assembly, Motion-Control Integration, Experimental Testing,
             Process Optimization, Safety Engineering, Product Development
         </p>
+<div class="stat-grid">
 
+    <div class="stat-box">
+        <h3>6+</h3>
+        <p>Custom CAD Components</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>$970</h3>
+        <p>Total System Cost</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>2</h3>
+        <p>Fiber Orientations Produced</p>
+    </div>
+
+</div>
         <div class="grid">
             <div>
                 <img src="electrospinning_setup.jpg" alt="Completed Electrospinning System" class="project-img">
@@ -814,7 +895,7 @@ footer{
     </div>
 </section>
 
-<section id="skills">
+<section id="skills" class="section-gray">
     <h2>Technical Skills</h2>
 
     <div class="skill-grid">
@@ -878,7 +959,7 @@ footer{
     </div>
 </section>
 
-<section id="certifications" class="section-gray">
+<section id="certifications" class="section-white">
 
     <h2>Certifications</h2>
 
@@ -922,7 +1003,7 @@ footer{
     </div>
 
 </section>
-<section id="education">
+<section id="education" class="section-gray">
     <h2>Education</h2>
 
     <div class="card">
@@ -945,7 +1026,7 @@ footer{
     </div>
 </section>
     
-<section id="resume">
+<section id="resume" class="section-white">
     <h2>Resume Preview</h2>
 
     <div class="card">
@@ -958,7 +1039,7 @@ footer{
     </div>
 </section>
     
-<section id="contact">
+<section id="contact" class="section-gray">
     <h2>Contact</h2>
 
     <div class="card">
