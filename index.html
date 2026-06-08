@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ugochukwu Okonkwo | Biomedical Engineer</title>
+<title>Ugochukwu Okonkwo | Engineering Portfolio</title>
 
 <style>
 body{
@@ -11,13 +11,39 @@ body{
     margin:0;
     padding:0;
     line-height:1.6;
+    background:#f8f9fa;
+    color:#222;
 }
 
 header{
-    background:#003366;
+    background:#003b70;
     color:white;
     text-align:center;
     padding:60px 20px;
+}
+
+.profile-pic{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    margin-bottom:20px;
+}
+
+header h1{
+    margin:10px 0;
+    font-size:42px;
+}
+
+header h3{
+    margin:5px 0;
+    font-size:24px;
+}
+
+header p{
+    font-size:18px;
+    margin-bottom:25px;
 }
 
 section{
@@ -27,6 +53,7 @@ section{
 }
 
 .project{
+    background:white;
     border:1px solid #ddd;
     border-radius:10px;
     padding:20px;
@@ -35,11 +62,29 @@ section{
 
 .btn{
     display:inline-block;
-    background:#003366;
-    color:white;
-    padding:10px 20px;
+    background:white;
+    color:#003b70;
+    padding:12px 22px;
     text-decoration:none;
-    border-radius:5px;
+    border-radius:6px;
+    font-weight:bold;
+    margin:5px;
+}
+
+.btn:hover{
+    background:#e6e6e6;
+}
+
+.contact-btn{
+    background:#003b70;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
 }
 </style>
 </head>
@@ -47,54 +92,79 @@ section{
 <body>
 
 <header>
+    <img src="headshot.jpg" alt="Ugochukwu Okonkwo headshot" class="profile-pic">
+
     <h1>Ugochukwu Okonkwo</h1>
-    <h3>M.S. Biomedical Engineer | MBA Bussiness Management</h3>
+
+    <h3>M.S. Biomedical Engineer | MBA</h3>
+    <p>Medical Device Product Development Engineer</p>
+
+    <a href="Ugochukwu_Okonkwo_Resume.pdf" download class="btn">Download Resume</a>
+    <a href="https://www.linkedin.com/in/ugochukwu-okonkwo-ms-mba-7859522a1/" target="_blank" class="btn">LinkedIn</a>
 </header>
 
 <section>
     <h2>About Me</h2>
     <p>
-        Recent M.S. Biomedical Engineering and MBA graduate with experience
-        in medical device product development, CAD design, prototyping,
+        Recent M.S. Biomedical Engineering and MBA graduate with experience in
+        medical device product development, CAD design, prototyping,
         verification testing, quality engineering, and additive manufacturing.
+        I am interested in designing, developing, and improving medical devices
+        that solve real clinical and usability challenges.
     </p>
 </section>
 
 <section>
-    <h2>Projects</h2>
+    <h2>Featured Projects</h2>
 
     <div class="project">
         <h3>Assistive Button Hook Redesign</h3>
         <p>
-            Master's thesis focused on redesigning a button hook for
-            individuals with dexterity impairments using ergonomic design,
-            CAD modeling, rapid prototyping, and usability testing.
+            Master's thesis focused on redesigning a button hook for individuals
+            with dexterity impairments using ergonomic design principles, CAD
+            modeling, rapid prototyping, and usability testing.
         </p>
     </div>
 
     <div class="project">
         <h3>Electrospinning System</h3>
         <p>
-            Designed and developed a low-cost electrospinning system
-            capable of producing aligned and random nanofibers for
+            Designed and developed a cost-effective electrospinning system
+            capable of producing aligned and random polymeric nanofibers for
             tissue engineering applications.
         </p>
     </div>
 
+    <div class="project">
+        <h3>Medical Device Product Development Co-op</h3>
+        <p>
+            Supported orthopedic medical device product development through CAD
+            modeling, prototyping, verification and validation support,
+            engineering documentation, and quality-related activities.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Technical Skills</h2>
+    <p>
+        Creo Parametric • SolidWorks • CAD Design • 3D Printing • Prototyping •
+        DFM • Verification & Validation • Quality Engineering • MATLAB • ANSYS
+        Fluent • Excel • ROS2
+    </p>
 </section>
 
 <section>
     <h2>Contact</h2>
+    <p>Email: UgochukwuOkonkwo04@gmail.com</p>
 
-    <p>Email: ugochukwuokonkwo04@gmail.com</p>
-
-    <a class="btn"
-       href="https://www.linkedin.com/in/ugochukwu-okonkwo-ms-mba-7859522a1/"
-       target="_blank">
-       LinkedIn
-    </a>
-
+    <a href="mailto:your.email@example.com" class="btn contact-btn">Email Me</a>
+    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn contact-btn">LinkedIn</a>
 </section>
+
+<footer>
+    <p>© 2026 Ugochukwu Okonkwo</p>
+</footer>
 
 </body>
 </html>
