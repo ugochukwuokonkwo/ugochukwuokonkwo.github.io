@@ -160,7 +160,33 @@ h2{
     text-align:center;
     margin-top:8px;
 }
+.stat-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
 
+.stat-box{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
+}
+
+.stat-box h3{
+    color:#003b70;
+    font-size:32px;
+    margin:0;
+}
+
+.resume-frame{
+    width:100%;
+    height:650px;
+    border:1px solid #ddd;
+    border-radius:12px;
+}
 footer{
     text-align:center;
     padding:25px;
@@ -230,14 +256,52 @@ footer{
         </p>
 
         <p>
-            My background spans orthopedic device development, assistive technology
-            design, and tissue engineering research. I am interested in designing,
-            developing, and improving medical devices that solve real clinical,
-            manufacturing, and usability challenges.
+            I am passionate about transforming user needs into practical,
+            manufacturable engineering solutions through human-centered design,
+            iterative prototyping, testing, and continuous improvement.
         </p>
     </div>
 </section>
+    
+<section id="gallery">
+    <h2>Project Gallery</h2>
 
+    <div class="grid">
+        <div class="card">
+            <img src="final_prototype.jpg" alt="Assistive Button Hook Project" class="project-img">
+            <h3>Assistive Button Hook Redesign</h3>
+            <p>
+                Human-centered redesign of an assistive dressing device using
+                ergonomic design, CAD modeling, 3D printing, wire-forming, and
+                usability testing.
+            </p>
+            <a href="#projects" class="btn contact-btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <img src="electrospinning_setup.jpg" alt="Electrospinning System Project" class="project-img">
+            <h3>Low-Cost Electrospinning System</h3>
+            <p>
+                Design and fabrication of a low-cost electrospinning system
+                integrating CAD, enclosure design, 3D printing, manufacturing,
+                and experimental testing.
+            </p>
+            <a href="#projects" class="btn contact-btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <img src="headshot.jpg" alt="Professional Engineering Experience" class="project-img">
+            <h3>Medical Device Engineering Experience</h3>
+            <p>
+                Orthopedic product development experience involving CAD design,
+                prototyping, design verification, quality systems, and
+                documentation control.
+            </p>
+            <a href="#experience" class="btn contact-btn">View Experience</a>
+        </div>
+    </div>
+</section>
+    
 <section id="experience">
     <h2>Professional Experience</h2>
 
@@ -255,7 +319,45 @@ footer{
         </ul>
     </div>
 </section>
+    
+<section id="design-process">
+    <h2>Design Process</h2>
 
+    <div class="grid">
+        <div class="card">
+            <h3>Assistive Button Hook Redesign</h3>
+
+            <ol>
+                <li>Needs Assessment</li>
+                <li>Concept Generation</li>
+                <li>Ergonomic Handle Development</li>
+                <li>CAD Modeling</li>
+                <li>3D Printed Prototyping</li>
+                <li>Wire-Forming Jig Development</li>
+                <li>Configuration Testing</li>
+                <li>Usability Evaluation</li>
+                <li>Design Refinement</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h3>Electrospinning System</h3>
+
+            <ol>
+                <li>System Requirements</li>
+                <li>System Architecture</li>
+                <li>CAD Design</li>
+                <li>Enclosure Fabrication</li>
+                <li>3D Printed Component Development</li>
+                <li>Mechanical & Electrical Integration</li>
+                <li>System Testing</li>
+                <li>Parameter Optimization</li>
+                <li>Final Demonstration</li>
+            </ol>
+        </div>
+    </div>
+</section>
+    
 <section id="projects">
     <h2>Featured Engineering Projects</h2>
 
@@ -617,7 +719,20 @@ footer{
         </ul>
     </div>
 </section>
+    
+<section id="resume">
+    <h2>Resume Preview</h2>
 
+    <div class="card">
+        <iframe src="Ugochukwu_Okonkwo_Resume.pdf" class="resume-frame"></iframe>
+
+        <p style="text-align:center;">
+            <a href="Ugochukwu_Okonkwo_Resume.pdf" target="_blank" class="btn contact-btn">View Resume</a>
+            <a href="Ugochukwu_Okonkwo_Resume.pdf" download class="btn contact-btn">Download Resume</a>
+        </p>
+    </div>
+</section>
+    
 <section id="contact">
     <h2>Contact</h2>
 
